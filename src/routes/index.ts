@@ -49,6 +49,7 @@ const machine = createMachine(
     },
     guards: {
       isLessThanHalf: (context, event) => {
+        console.log(event);
         return event.data.randomNumber < 0.5;
       },
     },
